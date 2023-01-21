@@ -24,4 +24,13 @@ iframe{
     /* border: 0px; 
     display: block;  */
 }
-
+.paperTurn-iframe{
+    border: 0px; 
+    max-width: 100%; 
+    display: block; 
+    background-color: #051c2c;
+}
+.paperTurn-cont{
+   width: 100%; 
+   max-width: 100%; 
+}
