@@ -41,7 +41,7 @@ iframe{
         height: 100%;
     }
 }
-@media all and (min-device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+@media all and (min-device-width: 768px) and (min-device-height: 1180px) and (orientation:portrait) {
     [id^=interactive-bespoke],iframe{
         min-height:90vh;
         height: 100%;
@@ -52,9 +52,9 @@ iframe{
         height: 100%;
     }
   }
-@media all and (min-device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+@media all and (min-device-width: 1180px) and (min-device-height: 768px) and (orientation:landscape) {
     iframe{
-        min-height:90vh;
+        min-height:100vh;
         height: 100%;
     }
     [id^=interactive-bespoke]{
