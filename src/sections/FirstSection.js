@@ -5,10 +5,10 @@ const MyComponent = () => {
   return (
       <>
           <BrowserView>
-            <a href="https://www.paperturn-view.com/global-publishing-mck/mckinsey-quarterly-vol-59-no-1?pid=Mjg288829&v=5.1" target="_self" className="hideMobile">View full screen for navigation and accessibility options</a> 
+            <a href="https://www.paperturn-view.com/global-publishing-mck/mckinsey-quarterly?pid=Mjk296702&v=1.1" target="_self" className="hideMobile">View full screen for navigation and accessibility options</a> 
           </BrowserView>
           <MobileView>
-            <a href="https://www.paperturn-view.com/global-publishing-mck/mckinsey-quarterly-vol-59-no-1?pid=Mjg288829&v=5.1" target="_blank" className="showMobile">View full screen for navigation and accessibility options</a> 
+            <a href="https://www.paperturn-view.com/global-publishing-mck/mckinsey-quarterly?pid=Mjk296702&v=1.1" target="_blank" className="showMobile">View full screen for navigation and accessibility options</a> 
           </MobileView>
       </>
   );
