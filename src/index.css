@@ -33,14 +33,7 @@ iframe{
     text-align:center;
     margin:auto;
 }
-@media(min-width:800px){
-    .hideMobile{
-        display: inline;
-    }
-    .showMobile{
-        display: none;
-    }
-}
+
 @media(max-width:767px){
     [id^=interactive-bespoke]{
         overflow: hidden;
@@ -62,12 +55,6 @@ iframe{
         min-height: 90vh;
         height: 100%;
     }
-    .hideMobile{
-        display: none!important;
-    }
-    .showMobile{
-        display: inline!important;
-    }
   }
 @media all and (min-device-width: 1024px) and (min-device-height: 768px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
     iframe{
@@ -78,11 +65,5 @@ iframe{
         overflow: hidden;
         min-height: 90vh;
         height: 100%;
-    }
-    .hideMobile{
-        display: none!important;
-    }
-    .showMobile{
-        display: inline!important;
     }
 }

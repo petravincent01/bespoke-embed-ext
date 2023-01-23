@@ -1,18 +1,19 @@
 import React from "react";
-import {BrowserView, MobileView} from 'react-device-detect';
+import {isTablet,isMobile} from 'react-device-detect';
 
 const MyComponent = () => {
-  return (
-      <>
-          <BrowserView>
-            <a href="https://www.paperturn-view.com/global-publishing-mck/mckinsey-quarterly?pid=Mjk296702&v=1.1" target="_self" className="hideMobile">View full screen for navigation and accessibility options</a> 
-          </BrowserView>
-          <MobileView>
-            <a href="https://www.paperturn-view.com/global-publishing-mck/mckinsey-quarterly?pid=Mjk296702&v=1.1" target="_blank" className="showMobile">View full screen for navigation and accessibility options</a> 
-          </MobileView>
-      </>
-  );
-};
+    if(isMobile|| isTablet) {
+        return (
+          <a href="https://www.paperturn-view.com/global-publishing-mck/mckinsey-quarterly?pid=Mjk296702&v=1.1" target="_blank">View full screen for navigation and accessibility options</a> 
+        )
+      }
+      else{  
+        return (
+          <a href="https://www.paperturn-view.com/global-publishing-mck/mckinsey-quarterly?pid=Mjk296702&v=1.1" target="_self">View full screen for navigation and accessibility options</a> 
+         )
+      }
+    };
+
 
 export default function FirstSection({ children }) {
   return (
