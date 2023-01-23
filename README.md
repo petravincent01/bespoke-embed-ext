@@ -8,8 +8,6 @@ To start the server:
 To build the files for the production environment:
 `npm run build`
 
-To build the files for the UAT environment:
-`npm run build-uat`
 
 # Two Branches
 
