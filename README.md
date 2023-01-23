@@ -15,6 +15,6 @@ To build the files for the production environment:
 2. Use the "afterLogin" branch to update the embed code after a user logins to dotcom
 
 
-# Deloying
+# Deploying
 1. Run 'npm run build'
 2. In the "mustDeploy" folder, make sure the spContent path and ID is matching your site
