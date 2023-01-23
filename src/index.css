@@ -28,7 +28,13 @@ iframe{
     top: 0;
     width: 100%;
 }
-
+.MainContent_mck-c-main-content__wrapper__2XBj6 .MainContent_mck-c-main-content__area-a__ExvXA > div:nth-child(2){
+    background-image: none!important;
+    min-height: initial!important;
+}
+.paperTurn-iframe{
+    border: 0px; max-width: 100%; display: block; background-color: #051c2c
+}
 
 @media(max-width:767px){
     [id^=interactive-bespoke]{
