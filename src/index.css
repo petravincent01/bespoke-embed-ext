@@ -29,9 +29,11 @@ iframe{
     width: 100%;
 }
 .paper-link{
-    padding:0 0 20px 0;
-    text-align:center;
-    margin:auto;
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+    margin: auto;
+    padding: 0 15px 20px;
+    text-align: center;
 }
 
 @media(max-width:767px){
