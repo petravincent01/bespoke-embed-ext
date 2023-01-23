@@ -48,6 +48,12 @@ iframe{
         min-height: 100vh;
         height: 100%;
     }
+    .mq-digital .mck-o-edge-to-edge {
+        max-width: 100%;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 @media all and (min-device-width: 768px) and (min-device-height: 1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2){
     .mq-digital .content-grid{
