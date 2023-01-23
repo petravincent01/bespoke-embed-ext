@@ -4,12 +4,12 @@ import {isTablet,isMobile} from 'react-device-detect';
 const MyComponent = () => {
     if(isMobile|| isTablet) {
         return (
-          <a href="https://www.paperturn-view.com/global-publishing-mck/mckinsey-quarterly?pid=Mjk296702&v=1.1" target="_blank">View full screen for navigation and accessibility options</a> 
+          <a href="https://www.paperturn-view.com/global-publishing-mck/mckinsey-quarterly?pid=Mjk296702&v=1.1" target="_blank">View full screen for navigation and accessibility options (including text size)</a> 
         )
       }
       else{  
         return (
-          <a href="https://www.paperturn-view.com/global-publishing-mck/mckinsey-quarterly?pid=Mjk296702&v=1.1" target="_self">View full screen for navigation and accessibility options</a> 
+          <a href="https://www.paperturn-view.com/global-publishing-mck/mckinsey-quarterly?pid=Mjk296702&v=1.1" target="_self">View full screen for navigation and accessibility options (including text size)</a> 
          )
       }
     };
