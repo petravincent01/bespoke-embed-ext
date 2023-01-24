@@ -4,7 +4,8 @@ div[id^='interactive'] .content-grid{
 }
 .quarterly-container{
     position: relative;
-    padding-bottom: 56.25%;
+    /* padding-bottom: 56.25%; */
+    padding-bottom: 80vh;
     padding-top: 25px;
     height: 0;
 }
