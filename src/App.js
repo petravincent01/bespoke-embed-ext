@@ -4,7 +4,7 @@ import FirstSection from "./sections/FirstSection";
 function Quarterly() {
 
   return (
-      <div className="mq-digital">
+      <div className="mq-digital digital-sample">
         <FirstSection />
       </div>
   

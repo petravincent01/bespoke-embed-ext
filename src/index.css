@@ -4,9 +4,11 @@ div[id^='interactive'] .content-grid{
 }
 .quarterly-container{
     position: relative;
-    padding-bottom: 56.25%;
     padding-top: 25px;
     height: 0;
+}
+#interactive-bespoke-mq-digital-sample .quarterly-container,.digital-sample .quarterly-container{
+    padding-bottom: 56.25%;
 }
 .iframe-cont{
     width: 100%; max-width: 100%; height: 408px;
@@ -17,7 +19,7 @@ div[id^='interactive'] .content-grid{
     height:60vh;
     min-height: 600px;
 } */
-iframe{
+.mq-digital iframe{
     background-color: #051c2c;
     border: none;
     bottom: 0;
