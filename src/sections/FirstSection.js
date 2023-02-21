@@ -1,15 +1,35 @@
 import React from "react";
 import {isMobile, isTablet} from 'react-device-detect';
+const prefix = "/spcontent/bespoke/mq-digital-sample/assets/q1-2023-full-issue-sample.pdf";
 
 const MyComponent = () => {
   if(isMobile|| isTablet) {
       return (
-        <a href="https://digitalq.mckinsey.com/?v=5.1" target="_blank">Tablet, mobile, and screen reader users click here</a> 
+        <div>
+        <div aria-hidden="true">
+          <a href="https://digitalq.mckinsey.com/?v=5.1" target="_blank" aria-hidden="true"  data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Tablet, mobile, and screen reader users click here">
+              Tablet, mobile, and screen reader users click here
+          </a>
+          <div aria-hidden="false">
+            <a href={prefix} target="_blank" aria-label="Screen reader users click here" className="visually-hidden" aria-hidden="false" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Screen reader users click here">Screen reader users click here</a> 
+
+            
+          </div>
+        </div>
+      </div>
       )
     }
     else{  
       return (
-        <a href="https://digitalq.mckinsey.com/?v=5.1" target="_self">Tablet, mobile, and screen reader users click here</a> 
+
+        <div>
+          <div aria-hidden="true">
+              <a href="https://digitalq.mckinsey.com/?v=5.1" target="_self" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Tablet, mobile, and screen reader users click here">Tablet, mobile, and screen reader users click here</a>
+          </div>
+          <div aria-hidden="false">
+              <a href={prefix} target="_self" aria-label="Screen reader users click here" className="visually-hidden" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Screen reader users click here">Screen reader users click here</a> 
+            </div>
+          </div>
        )
     }
 };
