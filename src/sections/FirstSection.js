@@ -5,29 +5,61 @@ const MyComponent = () => {
     if(isMobile|| isTablet) {
         return (
           <div>
-        <div aria-hidden="true">
-          <a href="https://digitalquarterly.mckinsey.com/?v=1.1" target="_blank" aria-hidden="true"  data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Tablet, mobile, and screen reader users click here">
-              Tablet, mobile, and screen reader users click here
-          </a>
           <div aria-hidden="false">
-            <a href={prefix} target="_blank" aria-label="Screen reader users click here" className="visually-hidden" aria-hidden="false" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Screen reader users click here">Screen reader users click here</a> 
-
-            
+          <p className="visually-hidden">
+          Screen reader users: <br/>This <a href={prefix} target="_blank" aria-label="accessible PDF here" className="visually-hidden" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Download accessible PDF here">accessible PDF</a> contains alt text for illustrations, charts and graphs. Its table of contents contains links to all articles.
+  In order to most efficiently navigate this document, we recommend the following:
+            <ol>
+              <li>Download and save the file to your computer.</li> 
+  
+              <li>If you’d like to see the list of all articles in this issue, jump by heading until you hear “Table of contents.”</li>
+  
+              <li>Once you’ve explored the list and found an article you’d like to read, select its link by tabbing to it and pressing Enter.</li>
+  
+              <li>To return to the table of contents, go to the list of headings, and begin typing “table of contents.” Press enter when you hear the heading with this title spoken.</li>
+            </ol>
+            If you have questions or encounter any difficulty with this PDF, you can reach us at: <a href="mailto:McKinsey_Website_Accessibility@mckinsey.com" target="_blank" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="McKinsey_Website_Accessibility@mckinsey.com">McKinsey_Website_Accessibility@mckinsey.com</a>.
+            </p>
           </div>
+      <div aria-hidden="true">
+        <a href="https://digitalquarterly.mckinsey.com/?v=1.1" target="_blank" aria-hidden="true"  data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Tablet, mobile, and screen reader users click here">
+            Tablet, mobile, and screen reader users click here
+        </a>
+        <div aria-hidden="false">
+          <a href={prefix} target="_blank" aria-label="Download accessible PDF here" className="visually-hidden" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Download accessible PDF here">Download accessible PDF here</a> 
         </div>
       </div>
+    </div>
         )
       }
       else{  
         return (
           <div>
-          <div aria-hidden="true">
-              <a href="https://digitalquarterly.mckinsey.com/?v=1.1" target="_self" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Tablet, mobile, and screen reader users click here">Tablet, mobile, and screen reader users click here</a>
-          </div>
           <div aria-hidden="false">
-              <a href={prefix} target="_self" aria-label="Screen reader users click here" className="visually-hidden" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Screen reader users click here">Screen reader users click here</a> 
-            </div>
+          <p className="visually-hidden">
+          Screen reader users: <br/>This <a href={prefix} target="_self" aria-label="accessible PDF here" className="visually-hidden" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Download accessible PDF here">accessible PDF</a> contains alt text for illustrations, charts and graphs. Its table of contents contains links to all articles.
+  In order to most efficiently navigate this document, we recommend the following:
+            <ol>
+              <li>Download and save the file to your computer.</li> 
+  
+              <li>If you’d like to see the list of all articles in this issue, jump by heading until you hear “Table of contents.”</li>
+  
+              <li>Once you’ve explored the list and found an article you’d like to read, select its link by tabbing to it and pressing Enter.</li>
+  
+              <li>To return to the table of contents, go to the list of headings, and begin typing “table of contents.” Press enter when you hear the heading with this title spoken.</li>
+            </ol>
+            If you have questions or encounter any difficulty with this PDF, you can reach us at: <a href="mailto:McKinsey_Website_Accessibility@mckinsey.com" target="_blank" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="McKinsey_Website_Accessibility@mckinsey.com">McKinsey_Website_Accessibility@mckinsey.com</a>.
+            </p>
           </div>
+      <div aria-hidden="true">
+        <a href="https://digitalquarterly.mckinsey.com/?v=1.1" target="_self" aria-hidden="true"  data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Tablet, mobile, and screen reader users click here">
+            Tablet, mobile, and screen reader users click here
+        </a>
+        <div aria-hidden="false">
+          <a href={prefix} target="_blank" aria-label="Download accessible PDF here" className="visually-hidden" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Download accessible PDF here">Download accessible PDF here</a> 
+        </div>
+      </div>
+    </div>
          )
       }
     };
