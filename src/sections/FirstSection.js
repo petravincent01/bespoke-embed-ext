@@ -1,13 +1,34 @@
 import React from "react";
 import {isTablet,isMobile} from 'react-device-detect';
 const prefix = "/spcontent/bespoke/mq-digital-v1/assets/q1_2023_full_issue_final.pdf";
+
 const MyComponent = () => {
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      pushEvent(event);
+    }
+  }
+
+  const pushEvent = (event) => {
+    if (window.appEventData) {
+      window.appEventData.push({
+        "event": "Navigation Link Clicked",
+        "linkInfo": {
+          "regions": "download",
+          "text": event.currentTarget.dataset.layerText,
+          "action": "keypress",
+          "category": "Download accessible PDF",
+          "region": "Prepoulated Search field"
+        }
+      });
+    }
+  }
     if(isMobile|| isTablet) {
         return (
           <div>
           <div aria-hidden="false">
           <p className="visually-hidden">
-          Screen reader users: <br/>This <a href={prefix} target="_blank" aria-label="accessible PDF here" className="visually-hidden" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Download accessible PDF here">accessible PDF</a> contains alt text for illustrations, charts and graphs. Its table of contents contains links to all articles.
+          Screen reader users: <br/>This <a href={prefix} target="_blank" aria-label="accessible PDF here" className="visually-hidden" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Download accessible PDF here" onKeyDown={handleKeyDown}>accessible PDF</a> contains alt text for illustrations, charts and graphs. Its table of contents contains links to all articles.
   In order to most efficiently navigate this document, we recommend the following:
             <ol>
               <li>Download and save the file to your computer.</li> 
@@ -26,7 +47,7 @@ const MyComponent = () => {
             Tablet, mobile, and screen reader users click here
         </a>
         <div aria-hidden="false">
-          <a href={prefix} target="_blank" aria-label="Download accessible PDF here" className="visually-hidden" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Download accessible PDF here">Download accessible PDF here</a> 
+          <a href={prefix} target="_blank" aria-label="Download accessible PDF here" className="visually-hidden" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Download accessible PDF here" onKeyDown={handleKeyDown}>Download accessible PDF here</a> 
         </div>
       </div>
     </div>
@@ -37,7 +58,7 @@ const MyComponent = () => {
           <div>
           <div aria-hidden="false">
           <p className="visually-hidden">
-          Screen reader users: <br/>This <a href={prefix} target="_self" aria-label="accessible PDF here" className="visually-hidden" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Download accessible PDF here">accessible PDF</a> contains alt text for illustrations, charts and graphs. Its table of contents contains links to all articles.
+          Screen reader users: <br/>This <a href={prefix} target="_blank" aria-label="accessible PDF here" className="visually-hidden" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Download accessible PDF here" onKeyDown={handleKeyDown}>accessible PDF</a> contains alt text for illustrations, charts and graphs. Its table of contents contains links to all articles.
   In order to most efficiently navigate this document, we recommend the following:
             <ol>
               <li>Download and save the file to your computer.</li> 
@@ -48,7 +69,7 @@ const MyComponent = () => {
   
               <li>To return to the table of contents, go to the list of headings, and begin typing “table of contents.” Press enter when you hear the heading with this title spoken.</li>
             </ol>
-            If you have questions or encounter any difficulty with this PDF, you can reach us at: <a href="mailto:McKinsey_Website_Accessibility@mckinsey.com" target="_blank" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="McKinsey_Website_Accessibility@mckinsey.com">McKinsey_Website_Accessibility@mckinsey.com</a>.
+            If you have questions or encounter any difficulty with this PDF, you can reach us at: <a href="mailto:McKinsey_Website_Accessibility@mckinsey.com" target="_self" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="McKinsey_Website_Accessibility@mckinsey.com">McKinsey_Website_Accessibility@mckinsey.com</a>.
             </p>
           </div>
       <div aria-hidden="true">
@@ -56,7 +77,7 @@ const MyComponent = () => {
             Tablet, mobile, and screen reader users click here
         </a>
         <div aria-hidden="false">
-          <a href={prefix} target="_blank" aria-label="Download accessible PDF here" className="visually-hidden" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Download accessible PDF here">Download accessible PDF here</a> 
+          <a href={prefix} target="_self" aria-label="Download accessible PDF here" className="visually-hidden" data-layer-event-prefix="Navigation Link" data-layer-action="click" data-layer-text="Download accessible PDF here" onKeyDown={handleKeyDown}>Download accessible PDF here</a> 
         </div>
       </div>
     </div>
