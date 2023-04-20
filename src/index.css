@@ -16,7 +16,7 @@ div[id^='interactive'] .content-grid{
     height:60vh;
     min-height: 600px;
 } */
-iframe{
+.mq-digital iframe{
     background-color: #DDDDDD;
     border: none;
     bottom: 0;
