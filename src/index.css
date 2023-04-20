@@ -17,7 +17,7 @@ div[id^='interactive'] .content-grid{
     min-height: 600px;
 } */
 iframe{
-    background-color: #051c2c;
+    background-color: #DDDDDD;
     border: none;
     bottom: 0;
     height: 100%;
