@@ -1,6 +1,6 @@
 
-var BASE_URL="/spContent/bespoke/mq-digital-v2/";
-var DIV_ID = "interactive-bespoke-mq-digital-v2";
+var BASE_URL="/spContent/bespoke/mq-digital-v1/";
+var DIV_ID = "interactive-bespoke-mq-digital-v1";
 
 var FILELIST = [
     //"https://code.jquery.com/jquery-1.12.4.js"
@@ -12,7 +12,7 @@ function loadExt(e,t){var s=this;s.files=e,s.js=[],s.head=document.getElementsBy
 
 async function loadHtml() {
    // console.log("Load react js and css files ...");
-    await fetch("/spContent/bespoke/mq-digital-v2/asset-manifest.json")
+    await fetch("/spContent/bespoke/mq-digital-v1/asset-manifest.json")
     .then(response => response.json())
     .then(function(json){
         json.entrypoints.forEach(function(value){
