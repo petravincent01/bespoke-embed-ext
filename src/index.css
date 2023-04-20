@@ -46,7 +46,7 @@ div[id^='interactive'] .content-grid{
         overflow: hidden;
         height: 100%;
     }
-    iframe{
+    .mq-digital iframe{
         min-height: 100vh;
         height: 100%;
     }
@@ -65,7 +65,7 @@ div[id^='interactive'] .content-grid{
         overflow: hidden;
         height: 100%;
     }
-    iframe{
+    .mq-digital iframe{
         min-height: 100vh;
         height: 100%;
     }
@@ -78,7 +78,7 @@ div[id^='interactive'] .content-grid{
         overflow: hidden;
         height: 100%;
     }
-    iframe{
+    .mq-digital iframe{
         min-height: 100vh;
         height: 100%;
     }
